@@ -14,7 +14,6 @@ const button = document.getElementById ("bottone");
 
 
 button.addEventListener("click", function (){
-    alert ("hai cliccato");
     console.log(distance.value);
     console.log(age.value);
 
