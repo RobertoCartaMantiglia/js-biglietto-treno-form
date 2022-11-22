@@ -28,6 +28,6 @@ button.addEventListener("click", function (){
         document.getElementById ("final-price").innerHTML = discountPriceOver.toFixed(2) + "&euro;";
     }
     else {
-        document.getElementById ("final-price").innerHTML = price + "&euro;";
+        document.getElementById ("final-price").innerHTML = price.toFixed(2) + "&euro;";
     }
 })

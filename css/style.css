@@ -1,0 +1,22 @@
+
+main{
+    background-image: url("https://www.ehabitat.it/wp-content/uploads/2022/04/treni-panoramici.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 1.3rem;
+}
+.btn-warning{
+    font-size: 2.5rem;
+    border-radius: 3rem;
+    color: white;
+    
+}
+
+#distance,
+#age{
+    border-radius: 3rem;
+    border: orange 1px solid;
+    text-align: center;
+}
