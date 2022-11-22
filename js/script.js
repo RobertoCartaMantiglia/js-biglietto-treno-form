@@ -6,12 +6,29 @@
 
 
 
-const distance = document.getElementById("distance");
-const age = document.getElementById("age");
-const button = document.querySelector("button .btn btn-primary");
+const distance = parseInt(document.getElementById ("distance"));
+
+const age = document.getElementById ("age");
+
+const button = document.getElementById ("bottone");
 
 
 button.addEventListener("click", function (){
+    alert ("hai cliccato");
     console.log(distance.value);
     console.log(age.value);
+
+    let price = distance * 0.2762;
+    let discountPriceOver = price * 0.667;
+    let discountPriceJunior = price * 0.825;
+
+
+    if (age < 18) {
+        document.getElementById ("final-price").innerHTML = discountPriceJunior.toFixed(2) + "&euro;";
+    } else if (age > 65) {
+        document.getElementById ("final-price").innerHTML = discountPriceOver.toFixed(2) + "&euro;";
+    }
+    else {
+        document.getElementById ("final-price").innerHTML = price + "&euro;";
+    }
 })
