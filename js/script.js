@@ -6,7 +6,7 @@
 
 
 
-const distance = parseInt(document.getElementById ("distance"));
+const distance = document.getElementById ("distance");
 
 const age = document.getElementById ("age");
 
@@ -17,7 +17,7 @@ button.addEventListener("click", function (){
     console.log(distance.value);
     console.log(age.value);
 
-    let price = distance * 0.2762;
+    let price = parseInt(distance.value) * 0.2762;
     let discountPriceOver = price * 0.667;
     let discountPriceJunior = price * 0.825;
 
